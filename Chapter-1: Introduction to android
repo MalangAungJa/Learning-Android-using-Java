@@ -5,3 +5,9 @@ What is android?
 -It includes a software development kit(SDK) for writing original code and assembling software modules to create apps for Android users.
 
 Architecture of Android
+
+1. Sytem Apps && User Apps
+2. Java Api Framework
+3. Native C/C++ Libraries && Android Runtime
+4. Hardware Abstraction Layer(HAL)  
+5. Linux Kernel
