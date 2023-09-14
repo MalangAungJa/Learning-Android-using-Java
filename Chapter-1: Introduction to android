@@ -11,3 +11,48 @@ Architecture of Android
 3. Native C/C++ Libraries && Android Runtime
 4. Hardware Abstraction Layer(HAL)  
 5. Linux Kernel
+6. Power Management
+
+1. System Apps
+Dialer, Email, Calendar, Camera,...
+
+2. Java Api Framework
+i.Content Providers
+ii.View System
+iii.Managers
+a. Activity
+b. Location
+c. Package
+d. Notification
+e. Resource
+f. Telephony
+g. Window
+
+3. Native C/C++ Libraries
+a. Webkit
+b. OpenMAX AL
+c. Libc
+d. Media Framework
+e. OpenGL ES
+Android Runtime
+a.Android Runtime(ART)
+b.Core Libraries
+
+4. Hardware Abstraction Layer(HAL)
+a. Audio
+b. Bluetooth
+c. Camera 
+d. Sensors
+
+5. Linux Kernel
+a. Audio
+b. Binder(IPC)
+c. Display
+d. Keypad
+e. Bluetooth
+f. Camera
+g. Shared Memory 
+h. USB
+i. WIFI
+
+6. Power Management
