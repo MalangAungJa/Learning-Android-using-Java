@@ -58,7 +58,36 @@ If it is an app that requires registration to use, there may be the following sc
 4. Main page(display after successful login)
 
 Each activity may have a layout.
-In android development, a layout is actually an XML file.
+In Android development, a layout is actually an XML file.
+
+Layouts are a type of resource and are placed in the res folder.
+
+In ActivityMain.xml,
+android:id="@+id/textview" 
+
+In MainActivity.java
+
+TextView textview = (TextView) findViewByID(R.id.textView);
+textview.setText("Hello World");
+
+android:text="@string/hello_first_fragment"
+
+So why is the content above @string/hello_first_fragment? We can take a look at the file res/values/strings.xml:
+
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
+
+
 
 
 
