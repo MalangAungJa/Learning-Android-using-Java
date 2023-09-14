@@ -1,1 +1,64 @@
-<h1>The model-view-presenter pattern</h1>
+References: https://blog.huli.tw/2023/04/27/en/android-apk-decompile-intro-1/
+Blog author: Huli
+
+
+Android App is composed of three components::
+
+1. AndroidMainfest.xml, which can be thought of as the app's configuration file, containing various app-related information
+2. Resources include layout, strings appearing in the program, images, and all other information.
+3. Code
+
+AndroidMainfest.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+
+From this file, we can learn several things such as
+1. The app's package name is com.example.myapplication.
+2. This app has an activity named Mainactivity, which is the main entry point or main activity.
+
+Each app has a unique package name which can be thought of as the app's ID and is written in the AndroidMainFest.xml.
+
+If you go to the web version of Google Play, 
+you will find that the URL contains the package name. 
+For example, the URL of Facebook’s page looks like this: https://play.google.com/store/apps/details?id=com.facebook.katana&hl=zh_TW&gl=US
+So, com.facebook.katana is the package name of the Facebook app.
+
+
+What is an activity?
+
+Activity is a screen. Each screen is an activity.
+
+If it is an app that requires registration to use, there may be the following screens:
+1. Welcome page
+2. Registration page
+3. Login page
+4. Main page(display after successful login)
+
+Each activity may have a layout.
+In android development, a layout is actually an XML file.
+
+
+
